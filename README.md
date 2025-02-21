@@ -3,17 +3,14 @@
 
 # 1 Introdução
 
-Um dos principais problemas acerca da geração de
-energia elétrica é a não previsibilidade do consumo, podendo
-ocasionar déficit ou geração excedente de energia, que pode
-levar ao desperdício de energia produzida em excesso ou a
-falta de energia não planejada que deveria ser distribuída. A
-variação de consumo ocorre devido a fatores diversos durante
-todo o ano, sendo épocas de festas e feriados ou devido a
-sazonalidade periódica anual, apresentando altas e baixas
-demandas
-
-
+O uso da energia elétrica se tornou essencial para o
+modo de vida da sociedade moderna e uma referência na
+qualidade de vida. O
+consumo de energia elétrica constitui um forte indicador de
+desenvolvimento econômico, isso porque a demanda
+energética reflete tanto o ritmo de atividade industrial,
+comercial e de serviços, quanto à capacidade da população
+para adquirir bens e serviços. 
 
 Segundos dados da ONS, em Janeiro e Fevereiro de 2025, bateram recorde de consumo de
 energia elétrica. No dia 12/02 atingiu-se a marca 103.785 MW. Este é o terceiro recorde do ano, superando as 
