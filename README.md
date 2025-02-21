@@ -46,7 +46,7 @@ O consumo de energia é dividido por regiões do Brasil e será analsados do per
 2022 até Dezembro de 2024. Totalizando 36 meses de análise. vale destacar que foram algumas 
 alteraões em relação ao arquivo (que está disponível na pasta desse projeto), pos o otro não se 
 encontrava em estrutura de colunas e linhas e não havia como manipular os dados. Por isso o arquivo
-ficou com  aseguinte estrutura, semelhante as utilziadas nos bancos de dados
+ficou com  aseguinte estrutura, semelhante as utilizadas nos bancos de dados, conforme é mostrado na tabela abaixo.
 
 | Regiao       | Consumo(Kw) | Data |
 |--------------|-------------|--|
@@ -67,34 +67,46 @@ será obitida apenas a média de temperatura das capitais das regiões.
 Primeiramente para se usar a Open Meteo, irá se precisar dos dados de longitude e
 latidude de cada capital, Conforme mostrado na Tabela 1.
 
-| Cidade          | Latitude  | Longitude  |
-|--------------- |----------|------------|
-| Belo Horizonte | -19.92   | -43.94     |
-| São Paulo      | -23.54   | -46.63     |
-| Rio de Janeiro | -22.90   | -43.20     |
-| Vitória        | -22.32   | -40.33     |
-| São Luís       | -2.53    | -44.30     |
-| Teresina       | -5.08    | -42.80     |
-| Fortaleza      | -3.71    | -38.54     |
-| Natal          | -5.79    | -35.21     |
-| João Pessoa    | -7.11    | -34.84     |
-| Recife        | -8.04    | -34.87     |
-| Maceió         | -9.66    | -35.73     |
-| Aracaju        | -10.94   | -37.07     |
-| Salvador       | -12.97   | -38.50     |
-| Rio Branco     | -9.97    | -67.81     |
-| Macapá         | 0.03     | -51.07     |
-| Manaus         | -3.10    | -60.02     |
-| Belém          | -1.46    | -48.50     |
-| Porto Velho    | -8.76    | -63.90     |
-| Boa Vista      | 2.82     | -60.67     |
-| Palmas         | -10.24   | -48.35     |
-    | Curitiba       | -25.43   | -49.27     |
-    | Florianópolis  | -27.60   | -48.55     |
-    | Porto Alegre   | -30.03   | -51.23     |
-    | Goiânia        | -16.68   | -49.25     |
-    | Campo Grande   | -20.45   | -54.62     |
-    | Cuiabá         | -15.60   | -56.10     |
+        sudeste = {
+            "Belo Horizonte": (-19.92, -43.94),
+            "São Paulo": (-23.54, -46.63),
+            "Rio de Janeiro": (-22.90, -43.20),
+            "Vitória": (-22.32, -40.33)
+    }
+    
+    Nordeste = {"Sao Luis": (-2.53, -44.3),
+                "Teresina ":(-5.08, -42.8),
+                "Fortaleza": (-3.71,-38.54),
+                "Natal" :(-5.79,-35.21),
+                "Joao Pessoa": (-7.11,-34.84),
+                "Recife": (-8.04,-34.87),
+                "Maceió": (-9.66,-35.73),
+                "Aracaju": (-10.94,-37.07),
+                "Salvador":(-12.97, -38.50)
+    }
+    
+    Norte = {
+                "Rio Branco": (-9.97, -67.81),
+                "Macapá": (0.03, -51.07),
+                "Manaus": (-3.10, -60.02),
+                "Belém": (-1.46, -48.50),
+                "Porto Velho": (-8.76, -63.90),
+                "Boa Vista": (2.82, -60.67),
+                "Palmas": (-10.24, -48.35)
+    }
+    
+    Sul = {
+                "Curitiba": (-25.43, -49.27),
+                "Florianópolis": (-27.60, -48.55),
+                "Porto Alegre": (-30.03, -51.23)
+    }
+    
+    Centro_Oeste = {
+                "Brasília": (-15.78, -47.93),
+                "Goiânia": (-16.68, -49.25),
+                "Campo Grande": (-20.45, -54.62),
+                "Cuiabá": (-15.60, -56.10)
+    }
 
 Primeiro foi preciso criar um __for__ que irá interar para pegar o primeiro e o último
 dia do mês
@@ -158,4 +170,4 @@ em formato CSV.
     else:
         print("\n⚠️ Nenhum dado coletado! Verifique os logs acima.")
 
-# Resultados
+# 3 Resultados
