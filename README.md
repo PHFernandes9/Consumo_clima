@@ -1,3 +1,6 @@
+# REPOSITÓRIO DE ANÁLISE DE DADOS DE PAULO HENRIQUE
+
+
 # 1 Introdução
 
 
@@ -34,6 +37,13 @@ disponível nesse  [link](https://www.epe.gov.br/pt/publicacoes-dados-abertos/pu
 O consumo de energia é dividido por regiões do Brasil e será analsados do período de Janeiro de
 2022 até Dezembro de 2024. Totalizando 36 meses de análise.
 
+| Regiao       | Consumo(Kw) | Data |
+|--------------|-------------|--|
+| Norte        | 3033623     | 2022-01 |
+| Nordeste     |7269935| 2022-01 |
+| Sudeste      |20526803| 2022-01  |
+| Sul          |8495715|  2022-01 |
+| Centro-Oeste |3254143|  2022-01 |
 
 
 ## 2.2 API 
@@ -44,7 +54,7 @@ será obitida apenas a média de temperatura das capitais das regiões.
 
 ## 2.3 Obtenção das temperaturas
 Primeiramente para se usar a Open Meteo, irá se precisar dos dados de longitude e
-latidude de cada capital. 
+latidude de cada capital, Conforme mostrado na Tabela 1.
 
 | Cidade          | Latitude  | Longitude  |
 |--------------- |----------|------------|
@@ -74,3 +84,31 @@ latidude de cada capital.
 | Goiânia        | -16.68   | -49.25     |
 | Campo Grande   | -20.45   | -54.62     |
 | Cuiabá         | -15.60   | -56.10     |
+
+Primeiro foi preciso criar um __for__ que irá pegar todos os dias do mês. Isso é 
+necessário, pois o API, apenas trás  a temperatura máxima e mínima de um período. 
+
+    for ano in anos:
+    for mes in meses:
+        temperaturas_por_mes = defaultdict(list)  # Reinicia o dicionário para evitar acumulação
+        # Definição do primeiro e último dia do mês
+        if mes in [1, 3, 5, 7, 8, 10, 12]:
+            ultimo_dia = 31
+        elif mes == 2:
+            ultimo_dia = 28
+        else:
+            ultimo_dia = 30
+
+        primeiro_dia = f"{ano}-{mes:02d}-01"
+        ultimo_dia = f"{ano}-{mes:02d}-{ultimo_dia}"
+
+Como os 
+
+                params = {
+                "latitude": lat,
+                "longitude": lon,
+                "start_date": primeiro_dia,
+                "end_date": ultimo_dia,
+                "daily": "temperature_2m_max,temperature_2m_min",
+                "timezone": "America/Sao_Paulo"
+            }
