@@ -78,15 +78,15 @@ latidude de cada capital, Conforme mostrado na Tabela 1.
 | Porto Velho    | -8.76    | -63.90     |
 | Boa Vista      | 2.82     | -60.67     |
 | Palmas         | -10.24   | -48.35     |
-| Curitiba       | -25.43   | -49.27     |
-| Florianópolis  | -27.60   | -48.55     |
-| Porto Alegre   | -30.03   | -51.23     |
-| Goiânia        | -16.68   | -49.25     |
-| Campo Grande   | -20.45   | -54.62     |
-| Cuiabá         | -15.60   | -56.10     |
+    | Curitiba       | -25.43   | -49.27     |
+    | Florianópolis  | -27.60   | -48.55     |
+    | Porto Alegre   | -30.03   | -51.23     |
+    | Goiânia        | -16.68   | -49.25     |
+    | Campo Grande   | -20.45   | -54.62     |
+    | Cuiabá         | -15.60   | -56.10     |
 
-Primeiro foi preciso criar um __for__ que irá pegar todos os dias do mês. Isso é 
-necessário, pois o API, apenas trás  a temperatura máxima e mínima de um período. 
+Primeiro foi preciso criar um __for__ que irá interar para pegar o primeiro e o último
+dia do mês
 
     for ano in anos:
     for mes in meses:
@@ -102,8 +102,9 @@ necessário, pois o API, apenas trás  a temperatura máxima e mínima de um per
         primeiro_dia = f"{ano}-{mes:02d}-01"
         ultimo_dia = f"{ano}-{mes:02d}-{ultimo_dia}"
 
-Como os 
+Após isso será passados os valores de primeiro e ultimo dia nos parâmetros da url.
 
+        for cidade, (lat, lon) in sudeste.items():
                 params = {
                 "latitude": lat,
                 "longitude": lon,
@@ -112,3 +113,38 @@ Como os
                 "daily": "temperature_2m_max,temperature_2m_min",
                 "timezone": "America/Sao_Paulo"
             }
+
+  Será pego os valores de temperatura máxima e mínima de cada cidade e armazenados
+nas variaveis de temp_max e temp_min.
+   
+            if "daily" in data:
+                temp_max = data["daily"]["temperature_2m_max"]
+                temp_min = data["daily"]["temperature_2m_min"]
+
+                # Cálculo da média de temperatura do mês
+                media_temp = (sum(temp_max) + sum(temp_min)) / (2 * len(temp_max))
+
+
+                temperaturas_por_mes[(mes, ano)].append(media_temp)
+
+Após isso será agregado as temperaturas por mês. (Exemplo 2022-01,2022-02 ....) 
+
+        for (mes, ano), temperaturas in temperaturas_por_mes.items():
+            media_geral = sum(temperaturas) / len(temperaturas)
+            resultados_totais.append({
+                'Data': f"{ano}-{mes}",
+                'Temperatura': round(media_geral, 2),
+                'Regiao':'Centro-Oeste'
+            })
+Apos isso é feito para cada região posteriormente. Por útlimo os dados serão exportados 
+em formato CSV. 
+    
+        if resultados_totais:
+        df_resultados = pd.DataFrame(resultados_totais)
+        caminho_arquivo = r'C:\Projetos\Consumo_e_Temperatura\Novo_Temperatura_API.csv'
+        df_resultados.to_csv(caminho_arquivo, index=False)
+        print(f'\n📂 Dados exportados para o arquivo: {caminho_arquivo}')
+    else:
+        print("\n⚠️ Nenhum dado coletado! Verifique os logs acima.")
+
+# Resultados
