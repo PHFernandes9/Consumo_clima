@@ -3,6 +3,16 @@
 
 # 1 Introdução
 
+Um dos principais problemas acerca da geração de
+energia elétrica é a não previsibilidade do consumo, podendo
+ocasionar déficit ou geração excedente de energia, que pode
+levar ao desperdício de energia produzida em excesso ou a
+falta de energia não planejada que deveria ser distribuída. A
+variação de consumo ocorre devido a fatores diversos durante
+todo o ano, sendo épocas de festas e feriados ou devido a
+sazonalidade periódica anual, apresentando altas e baixas
+demandas
+
 
 
 Segundos dados da ONS, em Janeiro e Fevereiro de 2025, bateram recorde de consumo de
@@ -10,9 +20,7 @@ energia elétrica. No dia 12/02 atingiu-se a marca 103.785 MW. Este é o terceir
 marcas anteriores de 11/02 (103.335 MW) e 22/01 (102.810 MW). Esse aumento se deve pricinpalmente
 as altas temperaturas registradas no país. 
 
-Mas qual é a relação entre a temperatura e o consumo de energia elétrica ? 
-
-O gráfico da Figura 1 possível ver  os aparelhos e dispositivos que mais consomem 
+Mas qual é a relação entre a temperatura e o consumo de energia elétrica ? O gráfico da Figura 1 possível ver  os aparelhos e dispositivos que mais consomem 
 energia elétrica.
 
 
@@ -35,7 +43,10 @@ Primeriramente será utiliados os dados de consumo de energia elétrica,
 esses dadsos são disponibilizados no site da EPE (Empresa de Pesquisa Energética),
 disponível nesse  [link](https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes/consumo-de-energia-eletrica).
 O consumo de energia é dividido por regiões do Brasil e será analsados do período de Janeiro de
-2022 até Dezembro de 2024. Totalizando 36 meses de análise.
+2022 até Dezembro de 2024. Totalizando 36 meses de análise. vale destacar que foram algumas 
+alteraões em relação ao arquivo (que está disponível na pasta desse projeto), pos o otro não se 
+encontrava em estrutura de colunas e linhas e não havia como manipular os dados. Por isso o arquivo
+ficou com  aseguinte estrutura, semelhante as utilziadas nos bancos de dados
 
 | Regiao       | Consumo(Kw) | Data |
 |--------------|-------------|--|
