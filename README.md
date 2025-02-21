@@ -9,13 +9,20 @@ as altas temperaturas registradas no país.
 
 Mas qual é a relação entre a temperatura e o consumo de energia elétrica ? 
 
-Nesse gráfico aqui abaixo é possível ver  os aparelhos e dispositivos que mais consomem 
+O gráfico da Figura 1 possível ver  os aparelhos e dispositivos que mais consomem 
 energia elétrica.
 
 
 
 ![Imagem](https://raw.githubusercontent.com/PHFernandes9/Consumo_clima/refs/heads/main/consumo.png)
-                            Figura 
+                            Figura 1
+
+
+Durante a época de calor, aumenta o uso  de apartelhos como ventiladores 
+e ares condicionados, esse último conforme mostrado no gráfico é principal 
+vilão para o consumo tão alto de energia elétrica. Por causa da sua estrutura
+de funcionamento o ar-condiconado consome mais energia que qualquer outro aparelho.
+Em decorrência das altas temperaturas principais no comercio o uso se torna bem maior.
 
 
 # 2 Database
