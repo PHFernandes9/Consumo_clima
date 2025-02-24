@@ -12,25 +12,23 @@ energética reflete tanto o ritmo de atividade industrial,
 comercial e de serviços, quanto à capacidade da população
 para adquirir bens e serviços. 
 
+Um dos principais problemas acerca da geração de
+energia elétrica é a não previsibilidade do consumo, podendo
+ocasionar déficit ou geração excedente de energia, que pode
+levar ao desperdício de energia produzida em excesso ou a
+falta de energia não planejada que deveria ser distribuída. A
+variação de consumo ocorre devido a fatores diversos durante
+todo o ano, sendo épocas de festas e feriados ou devido a
+sazonalidade periódica anual, apresentando altas e baixas
+demandas.
+ Seg
+
 Segundos dados da ONS, em Janeiro e Fevereiro de 2025, bateram recorde de consumo de
 energia elétrica. No dia 12/02 atingiu-se a marca 103.785 MW. Este é o terceiro recorde do ano, superando as 
 marcas anteriores de 11/02 (103.335 MW) e 22/01 (102.810 MW). Esse aumento se deve pricinpalmente
 as altas temperaturas registradas no país. 
 
-Mas qual é a relação entre a temperatura e o consumo de energia elétrica ? O gráfico da Figura 1 possível ver  os aparelhos e dispositivos que mais consomem 
-energia elétrica.
 
-
-
-![Imagem](https://raw.githubusercontent.com/PHFernandes9/Consumo_clima/refs/heads/main/consumo.png)
-                            Figura 1
-
-
-Durante a época de calor, aumenta o uso  de apartelhos como ventiladores 
-e ares condicionados, esse último conforme mostrado no gráfico é principal 
-vilão para o consumo tão alto de energia elétrica. Por causa da sua estrutura
-de funcionamento o ar-condiconado consome mais energia que qualquer outro aparelho.
-Em decorrência das altas temperaturas principais no comercio o uso se torna bem maior.
 
 
 # 2 Metodologia 
@@ -168,3 +166,22 @@ em formato CSV.
         print("\n⚠️ Nenhum dado coletado! Verifique os logs acima.")
 
 # 3 Resultados
+
+
+Mas qual é a relação entre a temperatura e o consumo de energia elétrica ? O gráfico da Figura 1 possível ver  os aparelhos e dispositivos que mais consomem 
+energia elétrica.
+
+
+Durante a época de calor, aumenta o uso  de aparelhos como ventiladores 
+e ares-condicionados, esse último conforme mostrado no gráfico é principal 
+vilão para o consumo tão alto de energia elétrica. Por causa da sua estrutura
+de funcionamento o ar-condiconado consome mais energia que qualquer outro aparelho.
+Em decorrência das altas temperaturas principais no comercio o uso se torna bem maior.
+Como visto um ar-condicionado em méda consome quase R\$ 193,76 kw médio por mês se
+for ligado durante 8 horas. Com o valo do kw em R\$ 0,8. O custo chegaria em torno de 
+ R\$ 150,00 
+
+![Imagem](https://raw.githubusercontent.com/PHFernandes9/Consumo_clima/refs/heads/main/consumo.png)
+    Figura 1
+
+
