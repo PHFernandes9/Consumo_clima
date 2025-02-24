@@ -184,4 +184,17 @@ for ligado durante 8 horas. Com o valo do kw em R\$ 0,8. O custo chegaria em tor
 ![Imagem](https://raw.githubusercontent.com/PHFernandes9/Consumo_clima/refs/heads/main/consumo.png)
     Figura 1
 
+O gráfico apresenta a relação entre Consumo e Temperatura ao longo do tempo, cobrindo o período de janeiro de 2022 a julho de 2024. A análise das curvas indica uma forte correlação entre os dois fatores, sugerindo que variações na temperatura influenciam diretamente o consumo.
 
+Observando o comportamento dos dados, percebe-se que sempre que a temperatura aumenta, o consumo também tende a subir, e o mesmo ocorre quando há uma queda na temperatura. Essa relação sugere que o consumo pode estar ligado ao uso de equipamentos que demandam energia em função da temperatura, como ar-condicionado, sistemas de refrigeração ou aquecimento.
+
+No decorrer dos anos, destacam-se alguns momentos importantes:
+
+Entre julho de 2023 e janeiro de 2024, houve um aumento expressivo tanto no consumo quanto na temperatura, seguido por uma queda.
+O mesmo comportamento pode ser notado entre julho de 2024 e janeiro de 2025, indicando um possível padrão sazonal.
+Já no ano de 2022, observamos oscilações mais acentuadas, com quedas mais pronunciadas tanto na temperatura quanto no consumo.
+A tendência geral sugere que o consumo de energia tem apresentado um leve aumento ao longo dos anos, o que pode indicar mudanças nos hábitos de consumo ou variações climáticas mais intensas. Além disso, a forte relação entre as variáveis reforça a importância de monitorar as temperaturas para prever padrões de consumo e planejar estratégias de eficiência energética.
+
+Caso essa análise seja voltada para gestão de energia, é essencial considerar medidas como uso de fontes alternativas, otimização do consumo em períodos de alta demanda e políticas de eficiência energética.
+
+![Imagem](https://raw.githubusercontent.com/PHFernandes9/Consumo_clima/refs/heads/main/curva_de%20_consumo_plea_temperura.png)
