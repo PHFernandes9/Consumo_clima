@@ -1,7 +1,7 @@
-# REPOSITÓRIO DE ANÁLISE DE DADOS DE PAULO HENRIQUE
+# REPOSITÓRIO DE ANÁLISE 
 
 
-# 1 Introdução
+## 📋 Descrição
 
 O uso da energia elétrica se tornou essencial para o
 modo de vida da sociedade moderna e uma referência na
@@ -20,25 +20,34 @@ falta de energia não planejada que deveria ser distribuída. A
 variação de consumo ocorre devido a fatores diversos durante
 todo o ano, sendo épocas de festas e feriados ou devido a
 sazonalidade periódica anual, apresentando altas e baixas
-demandas. Segundos dados da ONS, em Janeiro e Fevereiro de 2025, 
+demandas. 
+
+Segundos dados da ONS, em Janeiro e Fevereiro de 2025, 
 bateram recorde de consumo de
 energia elétrica. No dia 12/02 atingiu-se a marca 103.785 MW.
 Este é o terceiro recorde do ano, superando as 
 marcas anteriores de 11/02 (103.335 MW) e 22/01 (102.810 MW). 
 
 Este projeto, busca analisar o consumo de energia elétrica.
+## 🛠️ Tecnologias Utilizadas
 
-# 2 Metodologia 
-## 2.1 Database
+- **Linguagem**: Python
+- **Bibliotecas**:
+  - `requests`: Para realizar requisições HTTP e obter o conteúdo das páginas.
+  - `pandas`: Para organizar e manipular os dados coletados.
+
+## 📖 Database
 
 Primeriramente será utiliados os dados de consumo de energia elétrica, 
 esses dadsos são disponibilizados no site da EPE (Empresa de Pesquisa Energética),
 disponível nesse  [link](https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes/consumo-de-energia-eletrica).
 O consumo de energia é dividido por regiões do Brasil e será analsados do período de Janeiro de
-2022 até Dezembro de 2024. Totalizando 36 meses de análise. vale destacar que foram algumas 
+2022 até Dezembro de 2024. Totalizando 36 meses de análise.
+
+Vale destacar que foram algumas 
 alteraões em relação ao arquivo (que está disponível na pasta desse projeto), pos o otro não se 
 encontrava em estrutura de colunas e linhas e não havia como manipular os dados. Por isso o arquivo
-ficou com  aseguinte estrutura, semelhante as utilizadas nos bancos de dados, conforme é mostrado na tabela abaixo.
+ficou com  as eguinte estrutura, semelhante as utilizadas nos bancos de dados, conforme é mostrado na tabela abaixo.
 
 | Regiao       | Consumo(Kw) | Data |
 |--------------|-------------|--|
@@ -57,7 +66,7 @@ será obitida apenas a média de temperatura das capitais das regiões.
 
 ## 2.3 Obtenção das temperaturas
 Primeiramente para se usar a Open Meteo, irá se precisar dos dados de longitude e
-latidude de cada capital, Conforme mostrado na Tabela 1.
+latidude de cada capital.
 
         sudeste = {
             "Belo Horizonte": (-19.92, -43.94),
@@ -162,7 +171,7 @@ em formato CSV.
     else:
         print("\n⚠️ Nenhum dado coletado! Verifique os logs acima.")
 
-# 3 Resultados
+# 📈 Resultados
 
 
 ### Mas qual é a relação entre a temperatura e o consumo de energia elétrica ? 
