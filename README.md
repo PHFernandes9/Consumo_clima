@@ -58,13 +58,13 @@ ficou com  as eguinte estrutura, semelhante as utilizadas nos bancos de dados, c
 | Centro-Oeste |3254143|  2022-01 |
 
 
-## 2.2 API 
+##  API 
 Para a temperatura será utilizada uma API(Aplication Programing Interface) chamada de 
 Open Meteo, que é uma API gratuita com dados históricos. Que fará a coleta das médias das temperaturas de cada mês. Como existem mais de 5 mil municípios
 no Brasil fica inviavél fazer a coleta da média de temperatura de cada um deles, dessa forma
 será obitida apenas a média de temperatura das capitais das regiões. 
 
-## 2.3 Obtenção das temperaturas
+## Obtenção das temperaturas
 Primeiramente para se usar a Open Meteo, irá se precisar dos dados de longitude e
 latidude de cada capital.
 
@@ -192,8 +192,7 @@ Já no ano de 2022, observamos oscilações mais acentuadas, com quedas mais pro
 A tendência geral sugere que o consumo de energia tem apresentado um leve aumento ao longo dos anos, o que pode indicar mudanças nos hábitos de consumo ou variações climáticas mais intensas. Além disso, a forte relação entre as variáveis reforça a importância de monitorar as temperaturas para prever padrões de consumo e planejar estratégias de eficiência energética.
 
 
-![Imagem](https://raw.githubusercontent.com/PHFernandes9/Consumo_clima/refs/heads/main/curva_de%20_consumo_plea_temperura.png)
-    Figura 1
+![Imagem](https://raw.githubusercontent.com/PHFernandes9/Consumo_clima/refs/heads/main/curva_de_consumo_plea_temperura.png)
 
 Durante a época de calor, aumenta o uso  de aparelhos como ventiladores 
 e ares-condicionados, esse último conforme mostrado no gráfico é principal 
@@ -205,4 +204,3 @@ for ligado durante 8 horas. Com o valo do kw em R\$ 0,8. O custo chegaria em tor
  R\$ 150,00 
 
 ![Imagem](https://raw.githubusercontent.com/PHFernandes9/Consumo_clima/refs/heads/main/consumo.png)
-    Figura 2
