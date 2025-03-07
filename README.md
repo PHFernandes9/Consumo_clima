@@ -166,10 +166,10 @@ em formato CSV.
       else:
           print("\n⚠️ Nenhum dado coletado! Verifique os logs acima.")
 
-# 📈 Resultados
+## 📈 Resultados
 
 
-### Mas qual é a relação entre a temperatura e o consumo de energia elétrica ? 
+## Mas qual é a relação entre a temperatura e o consumo de energia elétrica ? 
 
 - O gráfico abaixo apresenta a relação entre Consumo e Temperatura ao longo do tempo,
 cobrindo o período de janeiro de 2022 a julho de 2024. A análise das curvas 
@@ -186,6 +186,9 @@ O mesmo comportamento pode ser notado entre julho de 2024 e janeiro de 2025, ind
 Já no ano de 2022, observamos oscilações mais acentuadas, com quedas mais pronunciadas tanto na temperatura quanto no consumo.
 A tendência geral sugere que o consumo de energia tem apresentado um leve aumento ao longo dos anos, o que pode indicar mudanças nos hábitos de consumo ou variações climáticas mais intensas. Além disso, a forte relação entre as variáveis reforça a importância de monitorar as temperaturas para prever padrões de consumo e planejar estratégias de eficiência energética.
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/PHFernandes9/Consumo_clima/refs/heads/main/consumo.png" alt="Imagem">
+</p>
 
 - Durante a época de calor, aumenta o uso  de aparelhos como ventiladores 
 e ares-condicionados, esse último conforme mostrado no gráfico é principal 
@@ -196,4 +199,4 @@ Como visto um ar-condicionado em méda consome quase R\$ 193,76 kw médio por m�
 for ligado durante 8 horas. Com o valo do kw em R\$ 0,8. O custo chegaria em torno de 
  R\$ 150,00 
 
-![Imagem](https://raw.githubusercontent.com/PHFernandes9/Consumo_clima/refs/heads/main/consumo.png)
+
