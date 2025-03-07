@@ -71,17 +71,21 @@ latidude de cada capital.
               "Rio de Janeiro": (-22.90, -43.20),
               "Vitória": (-22.32, -40.33)
        }
-        Nordeste = {"Sao Luis": (-2.53, -44.3),
-                    "Teresina ":(-5.08, -42.8),
-                    "Fortaleza": (-3.71,-38.54),
-                    "Natal" :(-5.79,-35.21),
-                    "Joao Pessoa": (-7.11,-34.84),
-                    "Recife": (-8.04,-34.87),
-                    "Maceió": (-9.66,-35.73),
-                    "Aracaju": (-10.94,-37.07),
-                    "Salvador":(-12.97, -38.50)
-        }
+&nbsp;
+
+      Nordeste = {"Sao Luis": (-2.53, -44.3),
+                  "Teresina ":(-5.08, -42.8),
+                  "Fortaleza": (-3.71,-38.54),
+                  "Natal" :(-5.79,-35.21),
+                  "Joao Pessoa": (-7.11,-34.84),
+                  "Recife": (-8.04,-34.87),
+                  "Maceió": (-9.66,-35.73),
+                  "Aracaju": (-10.94,-37.07),
+                  "Salvador":(-12.97, -38.50)
+      }
       
+&nbsp;
+
       Norte = {
                   "Rio Branco": (-9.97, -67.81),
                   "Macapá": (0.03, -51.07),
@@ -91,19 +95,24 @@ latidude de cada capital.
                   "Boa Vista": (2.82, -60.67),
                   "Palmas": (-10.24, -48.35)
       }
-      
+&nbsp;
+
       Sul = {
                   "Curitiba": (-25.43, -49.27),
                   "Florianópolis": (-27.60, -48.55),
                   "Porto Alegre": (-30.03, -51.23)
       }
-      
+
+&nbsp;
+
       Centro_Oeste = {
                   "Brasília": (-15.78, -47.93),
                   "Goiânia": (-16.68, -49.25),
                   "Campo Grande": (-20.45, -54.62),
                   "Cuiabá": (-15.60, -56.10)
       }
+      
+
 
 - Primeiro foi preciso criar um __for__ que irá interar para pegar o primeiro e o último
 dia do mês
@@ -178,8 +187,6 @@ indica uma forte correlação entre os dois fatores, sugerindo que variações
 na temperatura influenciam diretamente o consumo.
 
 
-  
-
 <p align="center">
 <img src="https://raw.githubusercontent.com/PHFernandes9/Consumo_clima/refs/heads/main/curva_de_consumo_plea_temperura.png" alt="Imagem" width="750">
 </p>
@@ -188,7 +195,8 @@ na temperatura influenciam diretamente o consumo.
 - Entre julho de 2023 e janeiro de 2024, houve um aumento expressivo tanto no consumo quanto na temperatura, seguido por uma queda.
 O mesmo comportamento pode ser notado entre julho de 2024 e janeiro de 2025, indicando um possível padrão sazonal.
 Já no ano de 2022, observamos oscilações mais acentuadas, com quedas mais pronunciadas tanto na temperatura quanto no consumo.
-A tendência geral sugere que o consumo de energia tem apresentado um leve aumento ao longo dos anos, o que pode indicar mudanças nos hábitos de consumo ou variações climáticas mais intensas. 
+
+- A tendência geral sugere que o consumo de energia tem apresentado um leve aumento ao longo dos anos, o que pode indicar mudanças nos hábitos de consumo ou variações climáticas mais intensas. 
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/PHFernandes9/Consumo_clima/refs/heads/main/consumo_90.png" alt="Imagem", width="500">
@@ -199,11 +207,20 @@ aumenta, o consumo também tende a subir, e o mesmo ocorre quando há uma queda 
 
 - Durante a época de calor, aumenta o uso  de aparelhos como ventiladores 
 e ares-condicionados, esse último conforme mostrado no gráfico é principal 
-vilão para o consumo tão alto de energia elétrica. Por causa da sua estrutura
+vilão para o consumo tão alto de energia elétrica.
+
+- Por causa da sua estrutura
 de funcionamento o ar-condiconado consome mais energia que qualquer outro aparelho.
 Em decorrência das altas temperaturas principais no comercio o uso se torna bem maior.
 Como visto um ar-condicionado em méda consome quase R\$ 193,76 kw médio por mês se
 for ligado durante 8 horas. Com o valo do kw em R\$ 0,8. O custo chegaria em torno de 
  R\$ 150,00 
 
+## Conclusão 
+
+- Com base na análise apresentada, fica evidente que a temperatura exerce um papel significativo no consumo de energia elétrica. A forte correlação entre essas variáveis sugere que períodos mais quentes impulsionam o uso de equipamentos como ventiladores e, principalmente, ar-condicionado, resultando em um aumento expressivo do consumo. 
+
+- Além disso, a identificação de padrões sazonais reforça a necessidade de estratégias para gerenciar o consumo durante os períodos de maior demanda. O impacto do ar-condicionado é particularmente relevante, visto que seu funcionamento contínuo pode gerar custos elevados tanto para consumidores residenciais quanto para estabelecimentos comerciais. 
+
+- Dessa forma, medidas como o uso eficiente de aparelhos, adoção de tecnologias mais econômicas e conscientização sobre o consumo de energia podem ser fundamentais para reduzir gastos e minimizar impactos no sistema elétrico.
 
