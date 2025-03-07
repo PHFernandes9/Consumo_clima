@@ -191,7 +191,7 @@ Já no ano de 2022, observamos oscilações mais acentuadas, com quedas mais pro
 A tendência geral sugere que o consumo de energia tem apresentado um leve aumento ao longo dos anos, o que pode indicar mudanças nos hábitos de consumo ou variações climáticas mais intensas. 
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/PHFernandes9/Consumo_clima/refs/heads/main/consumo.png" alt="Imagem", width="400">
+  <img src="https://raw.githubusercontent.com/PHFernandes9/Consumo_clima/refs/heads/main/consumo_90.png" alt="Imagem", width="500">
 </p>
 
 - Observando o comportamento dos dados, percebe-se que sempre que a temperatura
