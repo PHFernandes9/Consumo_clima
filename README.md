@@ -216,7 +216,7 @@ Como visto um ar-condicionado em méda consome quase R\$ 193,76 kw médio por m�
 for ligado durante 8 horas. Com o valo do kw em R\$ 0,8. O custo chegaria em torno de 
  R\$ 150,00 
 
-## Conclusão 
+## 💡 Conclusão 
 
 - Com base na análise apresentada, fica evidente que a temperatura exerce um papel significativo no consumo de energia elétrica. A forte correlação entre essas variáveis sugere que períodos mais quentes impulsionam o uso de equipamentos como ventiladores e, principalmente, ar-condicionado, resultando em um aumento expressivo do consumo. 
 
