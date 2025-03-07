@@ -1,3 +1,4 @@
+
 # REPOSITÓRIO DE ANÁLISE 
 
 
@@ -36,16 +37,16 @@ Este projeto, busca analisar o consumo de energia elétrica.
 - Primeriramente será utilizados os dados de consumo de energia elétrica nas 5 regiões do país, 
 esses dadsos são disponibilizados no site da EPE (Empresa de Pesquisa Energética),
 disponível nesse  [link](https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes/consumo-de-energia-eletrica).
-O consumo de energia é dividido por regiões do Brasil e será analsados do período de Janeiro de
+O consumo de energia será analisados do período de Janeiro de
 2022 até Dezembro de 2024. Totalizando 36 meses de análise.
 
-- Vale destacar que foram algumas  alteraões em relação ao arquivo (que está disponível na pasta desse projeto), pos o otro não se 
-encontrava em estrutura de colunas e linhas e não havia como manipular os dados. Por isso o arquivo
-ficou com  a seguinte estrutura, semelhante as utilizadas nos bancos de dados, conforme é mostrado na tabela abaixo.
+- Vale destacar que foram feitas algumas alteraões em relação ao arquivo original (que está disponível na pasta desse projeto), pois este não se 
+encontrava em estrutura de colunas e linhas e não havia como manipular os dados. Por isso, após as alterações o novo arquivo se encontra na seguinte estrutura,
+ semelhante as utilizadas nos bancos de dados, conforme é mostrado na tabela abaixo.
 
 
  
-| Regiao       | Consumo(Kw) | Data |
+ | Regiao       | Consumo(Kw) | Data |
 |--------------|-------------|--|
 | Norte        | 3033623     | 2022-01 |
 | Nordeste     |7269935| 2022-01 |
@@ -176,19 +177,25 @@ cobrindo o período de janeiro de 2022 a julho de 2024. A análise das curvas
 indica uma forte correlação entre os dois fatores, sugerindo que variações 
 na temperatura influenciam diretamente o consumo.
 
-![Imagem](https://raw.githubusercontent.com/PHFernandes9/Consumo_clima/refs/heads/main/curva_de_consumo_plea_temperura.png)
 
-- Observando o comportamento dos dados, percebe-se que sempre que a temperatura
-aumenta, o consumo também tende a subir, e o mesmo ocorre quando há uma queda na temperatura. Essa relação sugere que o consumo pode estar ligado ao uso de equipamentos que demandam energia em função da temperatura, como ar-condicionado, sistemas de refrigeração ou aquecimento.
+  
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/PHFernandes9/Consumo_clima/refs/heads/main/curva_de_consumo_plea_temperura.png" alt="Imagem" width="750">
+</p>
+
 
 - Entre julho de 2023 e janeiro de 2024, houve um aumento expressivo tanto no consumo quanto na temperatura, seguido por uma queda.
 O mesmo comportamento pode ser notado entre julho de 2024 e janeiro de 2025, indicando um possível padrão sazonal.
 Já no ano de 2022, observamos oscilações mais acentuadas, com quedas mais pronunciadas tanto na temperatura quanto no consumo.
-A tendência geral sugere que o consumo de energia tem apresentado um leve aumento ao longo dos anos, o que pode indicar mudanças nos hábitos de consumo ou variações climáticas mais intensas. Além disso, a forte relação entre as variáveis reforça a importância de monitorar as temperaturas para prever padrões de consumo e planejar estratégias de eficiência energética.
+A tendência geral sugere que o consumo de energia tem apresentado um leve aumento ao longo dos anos, o que pode indicar mudanças nos hábitos de consumo ou variações climáticas mais intensas. 
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/PHFernandes9/Consumo_clima/refs/heads/main/consumo.png" alt="Imagem">
+  <img src="https://raw.githubusercontent.com/PHFernandes9/Consumo_clima/refs/heads/main/consumo.png" alt="Imagem", width="400">
 </p>
+
+- Observando o comportamento dos dados, percebe-se que sempre que a temperatura
+aumenta, o consumo também tende a subir, e o mesmo ocorre quando há uma queda na temperatura. Essa relação sugere que o consumo pode estar ligado ao uso de equipamentos que demandam energia em função da temperatura, como ar-condicionado, sistemas de refrigeração ou aquecimento.
 
 - Durante a época de calor, aumenta o uso  de aparelhos como ventiladores 
 e ares-condicionados, esse último conforme mostrado no gráfico é principal 
